@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>myVue</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>模板表达式</h1>
+      <div>{{ msg }}</div>
+      <br />
+
+      <h1>模板表达式</h1>
+      <div>总数 {{ count }}</div>
+      <br />
+
+      <h1>v-text测试</h1>
+      <div v-text="msg"></div>
+      <br />
+
+      <h1>v-html测试</h1>
+      <div v-html="testHtml"></div>
+      <br />
+
+      <h1>v-model测试</h1>
+      <div>
+        <input type="text" v-model="msg" />
+        <input type="text" v-model="count" />
+      </div>
+      <br />
+
+      <h1>v-on:click测试</h1>
+      <div>
+        <button v-on:click="handleClick">按钮</button>
+      </div>
+      <br />
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
